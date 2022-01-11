@@ -56,8 +56,10 @@ class LoginPage extends StatelessWidget {
                       ),
                       onPressed: () {
                         //Navigator.push(context, route)    --also can be used
-                        Navigator.pushNamed(context,
-                            MyRoutes.homeRoute); //but prefered one is this one
+                        Navigator.pushNamed(
+                            context,
+                            MyRoutes
+                                .projectRoute); //but prefered one is this one
                       },
                     )
                   ],
