@@ -10,7 +10,9 @@ class HomePage extends StatelessWidget {
     var str = "Justin";
     return Scaffold(
       appBar: AppBar(
-        title: Text('Learning Flutter'),
+        title: Text(
+          'Learning Flutter',
+        ),
       ),
       body: Center(
         child: Container(

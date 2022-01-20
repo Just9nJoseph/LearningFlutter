@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login.dart';
 import 'package:flutter_catalog/pages/project_name.dart';
+import 'package:flutter_catalog/pages/widget/themes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'utils/routes.dart';
@@ -18,15 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
-      darkTheme: ThemeData(
-        //so this like a property of ThemeMode.data
-        brightness: Brightness
-            .dark, //this property will be used when the themeMode is set to dark
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoutes.homeRoute,
       routes: {
         // "/": (context) => HomePage(), //any one can be used either this or home: HomePage()

@@ -41,22 +41,23 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text("Profile",
+                  textScaleFactor: 1.1,
                   style: TextStyle(
                     color: Colors.white,
-                  )
-                  textScaleFactor: 1.1),
+                  )),
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.mail,
                 color: Colors.white,
               ),
-              title: Text("Contact Me",
-                    textScaleFactor: 1.1,
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                  ),
+              title: Text(
+                "Contact Me",
+                textScaleFactor: 1.1,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
