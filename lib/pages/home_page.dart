@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/widget/drawer.dart';
 
+/*Not much practical , some theory
+  More abt Constraints,BuildContext, 3 Trees in flutter
+  Immutable means which cannot be changed 
+*/
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
