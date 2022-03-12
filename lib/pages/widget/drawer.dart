@@ -43,7 +43,7 @@ class MyDrawer extends StatelessWidget {
               title: Text("Profile",
                   style: TextStyle(
                     color: Colors.white,
-                  )
+                  ),
                   textScaleFactor: 1.1),
             ),
             ListTile(
